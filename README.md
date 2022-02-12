@@ -7,6 +7,6 @@
 
 [itch.io Game Page](https://z-sheikh.itch.io/plinko-burger)
 
-[Documentation](https://github.com/zSpaceSheikh/AltArcadeInterfaces/tree/main/Alt-Redemption)
+[Documentation](https://github.com/zSpaceSheikh/PlinkoBurger/tree/main/PlinkoBurgerGame#readme)
 
 [Unity Project](https://github.com/zSpaceSheikh/PlinkoBurger/tree/main/PlinkoBurgerGame)
