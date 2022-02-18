@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: efe1abba250eaa74b99f942c1f6c5c64
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Retrow Mentho
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 9bf75be8f06d48443baed36223c5c27d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
