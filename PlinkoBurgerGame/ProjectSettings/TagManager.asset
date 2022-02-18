@@ -3,7 +3,35 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Bun
+  - Burger Patty
+  - Bacon
+  - Cheese
+  - Tomato
+  - Lettuce
+  - Fry
+  - Drink
+  - Pickle
+  - Avocado
+  - Chili Pepper
+  - Mushroom
+  - Ham
+  - Pineapple
+  - Pumpkin
+  - Squash
+  - Coconut
+  - Banana
+  - Apple
+  - Fried Egg
+  - Donut
+  - Pea
+  - Beet
+  - Broccoli
+  - Strawberry
+  - Watermelon
+  - Papaya
+  - Onion
   layers:
   - Default
   - TransparentFX

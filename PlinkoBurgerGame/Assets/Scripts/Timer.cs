@@ -16,7 +16,8 @@ public class Timer : MonoBehaviour
     public float orderAddTime = 5f;
     public Light sceneLight;
 
-    public TextMeshProUGUI countdownText;
+    //public TextMeshProUGUI countdownText;
+    public Text countdownText;
     
     public static Timer S;
     

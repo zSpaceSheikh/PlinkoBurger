@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PlinkoBurgerSingleOrder.unity
     guid: 2603eae351d1d6e41b611db988191b79
+  - enabled: 1
+    path: Assets/Scenes/EndScene.unity
+    guid: c8bb63b4dbe3a06479ee42102cb1a97e
   m_configObjects: {}

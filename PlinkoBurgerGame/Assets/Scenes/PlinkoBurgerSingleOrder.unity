@@ -11136,7 +11136,7 @@ MonoBehaviour:
   confettiExplosion: {fileID: 0}
   rightTrashFire: {fileID: 0}
   leftTrashFire: {fileID: 0}
-  pegs: {fileID: 1327596556}
+  pegs: {fileID: 62143966}
 --- !u!114 &470122556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11175,15 +11175,15 @@ MonoBehaviour:
   hopCheese: {fileID: 4368258643433608273}
   hopBacon: {fileID: 1449480506896654451}
   hopMystery: {fileID: 4606746904610543860}
-  bunTop: {fileID: 0}
-  burg: {fileID: 0}
-  tomato: {fileID: 0}
-  bacon: {fileID: 0}
-  lettuce: {fileID: 0}
-  cheese: {fileID: 0}
-  bunBot: {fileID: 0}
-  fries: {fileID: 0}
-  drink: {fileID: 0}
+  bunTop: {fileID: 4974678621046205783, guid: 75dbe2f944be2724a86634dca7fea588, type: 3}
+  burg: {fileID: 6551540961748900290, guid: 5be57cb7a9839264d8f3918a02eab951, type: 3}
+  tomato: {fileID: 4470147278164259255, guid: 7a42c6f4ad66599469f7f8adb6d47d53, type: 3}
+  bacon: {fileID: 4399219070809091498, guid: 204e9f6ced2d1b74583abdb2ae7b2601, type: 3}
+  lettuce: {fileID: 4967588001293146485, guid: 09025aeb1f78b2b49b35065557d3b39a, type: 3}
+  cheese: {fileID: 1483029621218397017, guid: bb69eb1767b3a05448d19517cd552648, type: 3}
+  bunBot: {fileID: 3664641923511445534, guid: d972f1ffe8957774ba489eacc867666c, type: 3}
+  fries: {fileID: 3575158967034015687, guid: 40a7646d4f5e0fd468c770707c7e794a, type: 3}
+  drink: {fileID: 7565320871958751686, guid: b4a079c27dcbb564b86938dc88d94534, type: 3}
   apple: {fileID: 0}
   banana: {fileID: 0}
   blueberry: {fileID: 0}
@@ -15599,6 +15599,7 @@ GameObject:
   - component: {fileID: 762043816}
   - component: {fileID: 762043818}
   - component: {fileID: 762043817}
+  - component: {fileID: 762043819}
   m_Layer: 0
   m_Name: TriangleBumper
   m_TagString: Untagged
@@ -15668,6 +15669,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 762043815}
+  m_Mesh: {fileID: -3093838049415682139, guid: bee8823dbd7f76c4fbe5cf3419ff4ebf, type: 3}
+--- !u!64 &762043819
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762043815}
+  m_Material: {fileID: 13400000, guid: a1ef9f8dd9dd40c4ea9483062a2c4638, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
   m_Mesh: {fileID: -3093838049415682139, guid: bee8823dbd7f76c4fbe5cf3419ff4ebf, type: 3}
 --- !u!1 &772454967
 GameObject:
@@ -15739,7 +15754,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 00
+  m_Text: '-'
 --- !u!222 &772454970
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -27421,8 +27436,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1467606345}
   m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
-  m_LocalPosition: {x: -0.074999996, y: 2.7625, z: 0}
-  m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
+  m_LocalPosition: {x: 0.39, y: 2.6, z: -0.1}
+  m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
   m_Children:
   - {fileID: 762043816}
   - {fileID: 2031436654}
@@ -28321,6 +28336,7 @@ GameObject:
   - component: {fileID: 1578439511}
   - component: {fileID: 1578439513}
   - component: {fileID: 1578439512}
+  - component: {fileID: 1578439514}
   m_Layer: 5
   m_Name: Timer (1)
   m_TagString: Untagged
@@ -28380,7 +28396,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 1:00
+  m_Text: '-'
 --- !u!222 &1578439513
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -28389,6 +28405,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1578439510}
   m_CullTransparentMesh: 1
+--- !u!114 &1578439514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578439510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2681e2097615f2e47838daa3a04bb7e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeLength: 30
+  orderAddTime: 5
+  sceneLight: {fileID: 1226736386}
+  countdownText: {fileID: 1578439512}
 --- !u!1 &1584810637
 GameObject:
   m_ObjectHideFlags: 0
@@ -30087,8 +30119,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1785796858}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.02, y: 0.175, z: 0}
-  m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
+  m_LocalPosition: {x: -0.48, y: 0.32, z: -0.10000001}
+  m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
   m_Children:
   - {fileID: 2288968429898268421}
   - {fileID: 3107064873726141246}
@@ -34271,6 +34303,7 @@ GameObject:
   - component: {fileID: 2288968429898268421}
   - component: {fileID: 826488546396854158}
   - component: {fileID: 2460982636957613371}
+  - component: {fileID: 2087219680620770255}
   m_Layer: 0
   m_Name: TriangleBumper
   m_TagString: Untagged
@@ -34278,6 +34311,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &2087219680620770255
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087219680620770254}
+  m_Material: {fileID: 13400000, guid: a1ef9f8dd9dd40c4ea9483062a2c4638, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3093838049415682139, guid: bee8823dbd7f76c4fbe5cf3419ff4ebf, type: 3}
 --- !u!33 &2141109170284151551
 MeshFilter:
   m_ObjectHideFlags: 0
