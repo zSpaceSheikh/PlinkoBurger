@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class ScoreText : MonoBehaviour
 {
-    public TextMeshProUGUI scoreText;
-    
+    //public TextMeshProUGUI scoreText;
+    public Text scoreText;
     void Start()
     {
         scoreText.text = "0";
