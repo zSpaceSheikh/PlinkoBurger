@@ -48,7 +48,7 @@ The first major update has been to revamp the start screen and end screens to bo
 
 - *"This looks insane"*
 
-On Sunday, November 14 2021, 100+ real people played Plinko Burger! At the 4th annual [Whaaat!? Festival](https://whaaat.io/) Pliko Burger set up shop, confusing and delighting many players at the festival. We laughed, cried when things almost didn't work, and celebrated many hilarious orders that players submitted. With a reigning high score of 174 points, the festival-goers took the silliness in stride and really gave Plinko Burger a chance to shine. 
+On Sunday, November 14 2021, 100+ real people played Plinko Burger! At the 4th annual [Whaaat!? Festival](https://whaaat.io/) Plinko Burger set up shop, confusing and delighting many players at the festival. We laughed, cried when things almost didn't work, and celebrated many hilarious orders that players submitted. With a reigning high score of 174 points, the festival-goers took the silliness in stride and really gave Plinko Burger a chance to shine. 
 
 <img src="https://github.com/zSpaceSheikh/PlinkoBurger/blob/main/Media/StartScreen.jpg" width="33%"> <img src="https://github.com/zSpaceSheikh/PlinkoBurger/blob/main/Media/EndScreen.jpg" width="34%"> <img src="https://github.com/zSpaceSheikh/PlinkoBurger/blob/main/Media/PB-Caddy.JPG" width="30%">
 
@@ -74,7 +74,7 @@ Somehow this update both makes things simpler, and adds more complexity and opti
 
 - *Would you like your receipt?*
 
-This next iteration of Plinko Burger mainly involved some aesthetic upgrades and an opperational ordering system. We decided to go back to a single, central order bin after figuring out that two bins was two times, too many. Players can also see the missed ingredients fall to their deaths through transparent shoots out the back. The entire plinko machine got a *glow* update which gives a nice cool diner vibe to the whole experience.
+This next iteration of Plinko Burger mainly involved some aesthetic upgrades and an opperational ordering system. We decided to go back to a single, central order bin after figuring out that two bins was two times too many. Players can also see the missed ingredients fall to their deaths through transparent shoots out the back. The entire plinko machine got a *glow* update which gives a nice cool diner vibe to the whole experience.
 
 The unmentioned elephant in the room (now mentioned) is definitely the orderering and score system which now allows players to see the receipt of an order that they need to make on the left hand side of the plinko burger machine. After an order is sent out, another receipt will print while the audio of the customer ordering said meal can be heard over the headset. The game always starts with a simple Plinko Burger order to allow the player to ease into the experience. After that, who knows what someone might order!.
 
@@ -86,7 +86,7 @@ I wish we had the time and resources to hook up and *actual* receipt printer to 
 
 ## Plinko Burger, Order Up
 
-- *Bins, buns, battlestar galactica!*
+- *Bins, Buns, Battlestar Galactica!*
 
 Lots of functional updates *distant cheering* including moving order bins, propulsion ketchup/mustard controls, and a mystery box full of random ingredients!? The prototype will also now be controlled with a pair of force sensitive resistor squeezy bottle which will propel the bumper in either direction. The actual motion of the bumper could definitely be more slippery, which should happen in the next update. 
 
@@ -100,7 +100,7 @@ The mystery box is full of random food items which will fall at on command, incl
 
 - *Welcome to Plinko Burger, home of the plinko burger, may I take your order?*
 
-The newest plinko prototype has some super snazzy updates! Now with voice controls for ordering each ingredient to fall from their respective bins at the top, players can call out what they need and attempt to build thier burger. The bins at the top also light up and ding when the machine recognizes the players request. Pressing the spacebar sends the order off through the bin at the bottom and so you can start on the next one. 
+The newest plinko prototype has some super snazzy updates! Now with voice controls for ordering each ingredient to fall from their respective bins at the top, players can call out what they need and attempt to build their burger. The bins at the top also light up and ding when the machine recognizes the players request. Pressing the spacebar sends the order off through the bin at the bottom and so you can start on the next one. 
 
 Our next task will be to have specific orders, scoring, and a physical spatula controller for the paddle at the bottom. Other fun options include a headset with a mic that you can yell the orders you are hearing, out to the plinko machine. 
 
@@ -138,9 +138,7 @@ The goal of this first prototype is to get a version of the 'game' plinko up and
 
 ## A Trash Game Idea:
 
-For the next project, we will be pushing it a bit farther with more thorough development and fabrication. 
-
-My project idea is for a trash machine plinko game where players can remove physical pegs and replace them with tricked out ones that help move the falling items around to sort them. The initial concept for this involves 3 bins, one for trash, one for compost and one for recycling.
+The idea is for a trash machine plinko game, where players can remove physical pegs and replace them with tricked out ones that help move the falling items around to sort them. The initial concept for this involves 3 bins, one for trash, one for compost and one for recycling.
 
 The goal of the game is to correctly sort the most materials before the time runs out, and players will recieve tickets for how well they accomplish this. 
 
