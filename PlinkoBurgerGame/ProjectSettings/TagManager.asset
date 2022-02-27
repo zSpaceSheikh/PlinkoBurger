@@ -32,6 +32,15 @@ TagManager:
   - Watermelon
   - Papaya
   - Onion
+  - Leek
+  - Pear
+  - Radish
+  - Asparagus
+  - Blueberry
+  - Carrot
+  - Cherry
+  - Eggplant
+  - Cookie
   layers:
   - Default
   - TransparentFX

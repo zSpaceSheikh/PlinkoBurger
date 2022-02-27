@@ -13978,33 +13978,33 @@ MonoBehaviour:
   bunBot: {fileID: 3664641923511445534, guid: d972f1ffe8957774ba489eacc867666c, type: 3}
   fries: {fileID: 3575158967034015687, guid: 40a7646d4f5e0fd468c770707c7e794a, type: 3}
   drink: {fileID: 7565320871958751686, guid: b4a079c27dcbb564b86938dc88d94534, type: 3}
-  apple: {fileID: 0}
-  banana: {fileID: 0}
-  blueberry: {fileID: 0}
-  pineapple: {fileID: 0}
-  chili: {fileID: 0}
-  carrot: {fileID: 0}
-  avocado: {fileID: 0}
-  beet: {fileID: 0}
-  watermelon: {fileID: 0}
-  squash: {fileID: 0}
-  papaya: {fileID: 0}
-  pumpkin: {fileID: 0}
-  strawberry: {fileID: 0}
-  radish: {fileID: 0}
-  leek: {fileID: 0}
-  pear: {fileID: 0}
-  pea: {fileID: 0}
-  mushroom: {fileID: 0}
-  coconut: {fileID: 0}
-  broccoli: {fileID: 0}
-  asparagus: {fileID: 0}
-  eggplant: {fileID: 0}
-  onion: {fileID: 0}
-  friedEgg: {fileID: 0}
-  donut: {fileID: 0}
-  pickle: {fileID: 0}
-  ham: {fileID: 0}
+  apple: {fileID: 4530077736320339434, guid: 766fabdfdb0067241b463bf8f4b67a3c, type: 3}
+  banana: {fileID: 3600625685579006297, guid: ca1c6c36010417441a3bc8083ef0c605, type: 3}
+  blueberry: {fileID: 7158627965493848481, guid: e2df6c9c7ede32a4cbbce91e3930937a, type: 3}
+  pineapple: {fileID: 8369978367193302163, guid: 086ed56e1c5575c47b94fab5f7104200, type: 3}
+  chili: {fileID: 5699974456166202016, guid: ddf2b7e62990a8246b05e9f45e200ff3, type: 3}
+  carrot: {fileID: 2393292160856265161, guid: d49c2a235fcfe404aad1fd15f5beb6e5, type: 3}
+  avocado: {fileID: 6249168450584032978, guid: 92a35af60d1925447b2fc03d675b41e4, type: 3}
+  beet: {fileID: 1111751253005987855, guid: a3163dd8ad8ab4045b5ed55908e405a7, type: 3}
+  watermelon: {fileID: 8484483271869349339, guid: 1032541f13544f747855c62142376f6e, type: 3}
+  squash: {fileID: 5434372191952005939, guid: b7d4c5f651c8f22448b1788f7674477d, type: 3}
+  papaya: {fileID: 2294187964366134559, guid: e2d73475691c87444abc517a9ee90426, type: 3}
+  pumpkin: {fileID: 4458481649173532471, guid: 4447e51f322a2d34bb10bdb87ea74df4, type: 3}
+  strawberry: {fileID: 3612704804229790843, guid: cc0415cd875b19641b92b5886b02c796, type: 3}
+  radish: {fileID: 7579690938637907666, guid: 99abc86f5514f354581d79f795f73d25, type: 3}
+  leek: {fileID: 164230543783404007, guid: b632051bbf3d03f4ebbd1bcacb77528f, type: 3}
+  pear: {fileID: 6144895892411611736, guid: 62eb861ce2ec3a74ab7c0d224288d92d, type: 3}
+  pea: {fileID: 5895653729779284934, guid: 2a3d1bfc93ca1e149a315465c2f94e4e, type: 3}
+  mushroom: {fileID: 8888661825782313434, guid: fdf2ab6e2cce4974190bbb06ee7182ba, type: 3}
+  coconut: {fileID: 6804062020591805910, guid: 644d80fbbe7296145bb71001ec664944, type: 3}
+  broccoli: {fileID: 6843233663992808939, guid: aebc0b3bff7150944a726151617844e1, type: 3}
+  asparagus: {fileID: 2969474029839178978, guid: f34d888532fc8274dad59371af01b8c7, type: 3}
+  eggplant: {fileID: 379984370715284066, guid: 3e8da61182e01d44e875d4182e554283, type: 3}
+  onion: {fileID: 249562169204711788, guid: 233ea7588029ff146bbab30b5cf10c28, type: 3}
+  friedEgg: {fileID: 3351893799208292663, guid: 088f0747f3ed9c04399ea47335a883d1, type: 3}
+  donut: {fileID: 8245482833750405444, guid: 1992574f81b7c7447839a0ac04e486f4, type: 3}
+  pickle: {fileID: 2076702759802091868, guid: f817a6389e0d0e64982cb9609117bd74, type: 3}
+  ham: {fileID: 2198964990262901647, guid: d3fc714712c4a3d4187e72749c1e445d, type: 3}
 --- !u!4 &470122558
 Transform:
   m_ObjectHideFlags: 0
