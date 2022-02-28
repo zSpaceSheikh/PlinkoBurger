@@ -26,13 +26,15 @@ public class PlinkoChaos : MonoBehaviour
     
     void Start()
     {
-        actions.Add("Oops", Shake);
-        actions.Add("Umm", Shake);
-        
+        actions.Add("Oops", Fire);
+        actions.Add("Umm", Fire);
+        actions.Add("Whoops", Fire);
+        actions.Add("Oh no", Fire);
+
         actions.Add("Sorry", ManagerAudio);
         
-        actions.Add("What", Fire);
-        actions.Add("Come on", Fire);
+        actions.Add("What", Shake);
+        actions.Add("Come on", Shake);
         
         actions.Add("Fuck", ConfettiExplosion);
         actions.Add("Shit", YellowConfetti);

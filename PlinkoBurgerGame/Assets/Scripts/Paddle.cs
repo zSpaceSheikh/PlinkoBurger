@@ -17,6 +17,12 @@ public class Paddle : MonoBehaviour
 
     private float movement;
 
+    private void Start()
+    {
+        ketchup.Play();
+        mustard.Play();
+    }
+
 
     void FixedUpdate()
     {
@@ -35,7 +41,7 @@ public class Paddle : MonoBehaviour
         }
     
         // bumper is moving to the left, shoot mustard
-        if (movement < 0)
+        else if (movement < 0)
         {
             mustard.Play();
             ketchup.Stop();
