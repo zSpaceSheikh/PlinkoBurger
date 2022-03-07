@@ -18677,6 +18677,11 @@ MonoBehaviour:
   donut: {fileID: 8245482833750405444, guid: 1992574f81b7c7447839a0ac04e486f4, type: 3}
   pickle: {fileID: 2076702759802091868, guid: f817a6389e0d0e64982cb9609117bd74, type: 3}
   ham: {fileID: 2198964990262901647, guid: d3fc714712c4a3d4187e72749c1e445d, type: 3}
+  cherry: {fileID: 9141384413980449971, guid: fdc24a56879f96b46a24c6d43311b6da, type: 3}
+  turkeyLeg: {fileID: 785988913086425781, guid: a94f0bd908d413440ba65cbfe193ebc9, type: 3}
+  iceCream: {fileID: 9083160255169457283, guid: 2f12dd444400735488515487a90a7c1d, type: 3}
+  cookie: {fileID: 2848266865480141122, guid: b8d24f48dac80394ebc336ef4da70cce, type: 3}
+  brownie: {fileID: 678773433896806663, guid: 64b114b7a27cf524c9626fa4f0884c5d, type: 3}
 --- !u!4 &470122558
 Transform:
   m_ObjectHideFlags: 0

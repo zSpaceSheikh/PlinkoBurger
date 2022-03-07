@@ -65,6 +65,11 @@ public class GameManager : MonoBehaviour
     public GameObject donut;
     public GameObject pickle;
     public GameObject ham;
+    public GameObject cherry;
+    public GameObject turkeyLeg;
+    public GameObject iceCream;
+    public GameObject cookie;
+    public GameObject brownie;
 
     // add more game object calls to model prefabs here -----------------------------------------
     
@@ -153,7 +158,13 @@ public class GameManager : MonoBehaviour
         actions.Add("Donut", Donut);
         actions.Add("Pickle", Pickle);
         actions.Add("Ham", Ham);
+        actions.Add("cherry", Cherry);
         actions.Add("Fruit", RandFruit);
+        actions.Add("turkey", Turkey);
+        actions.Add("turkey leg", Turkey);
+        actions.Add("ice cream", IceCream);
+        actions.Add("cookie", Cookie);
+        actions.Add("brownie", Brownie);
         
         // add more things to spawn here ------------------------
 
@@ -591,6 +602,51 @@ public class GameManager : MonoBehaviour
             spawnIngredient(apple, hopMystery);
         }
         
+        mysteryMR.material.EnableKeyword("_EMISSION");
+        Invoke("MysteryLightUp", lightUpTime);
+        // activate the spawn sound
+        AudioManager.S.SpawnDing();
+    }
+    
+    private void Cherry()
+    {
+        spawnIngredient(cherry, hopMystery);
+        mysteryMR.material.EnableKeyword("_EMISSION");
+        Invoke("MysteryLightUp", lightUpTime);
+        // activate the spawn sound
+        AudioManager.S.SpawnDing();
+    }
+    
+    private void Turkey()
+    {
+        spawnIngredient(turkeyLeg, hopMystery);
+        mysteryMR.material.EnableKeyword("_EMISSION");
+        Invoke("MysteryLightUp", lightUpTime);
+        // activate the spawn sound
+        AudioManager.S.SpawnDing();
+    }
+    
+    private void Cookie()
+    {
+        spawnIngredient(cookie, hopMystery);
+        mysteryMR.material.EnableKeyword("_EMISSION");
+        Invoke("MysteryLightUp", lightUpTime);
+        // activate the spawn sound
+        AudioManager.S.SpawnDing();
+    }
+    
+    private void Brownie()
+    {
+        spawnIngredient(brownie, hopMystery);
+        mysteryMR.material.EnableKeyword("_EMISSION");
+        Invoke("MysteryLightUp", lightUpTime);
+        // activate the spawn sound
+        AudioManager.S.SpawnDing();
+    }
+    
+    private void IceCream()
+    {
+        spawnIngredient(iceCream, hopMystery);
         mysteryMR.material.EnableKeyword("_EMISSION");
         Invoke("MysteryLightUp", lightUpTime);
         // activate the spawn sound
