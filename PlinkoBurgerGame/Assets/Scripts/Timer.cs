@@ -68,8 +68,8 @@ public class Timer : MonoBehaviour
         countdownText.text = string.Format("{0:00}:{1:00}", mins, secs);
         
         
-        // sound an alarm for the last 25 seconds
-        if (secs < 16 && mins == 0)
+        // sound an alarm for the last 10 seconds
+        if (secs < 11 && mins == 0)
         {
             //Debug.Log("secs: " + secs + "  secPrev: " + secPrev);
             if (secPrev - secs == 1)

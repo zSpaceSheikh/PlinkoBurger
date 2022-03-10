@@ -53,9 +53,16 @@ public class Score : MonoBehaviour
                     Debug.Log("score: " + playerScore);
                 }
             }
-
+            
+            
             readyToCheck = false;
             _collectedIngredients.Clear();
+            // remove the order ingredient prefabs
+            foreach (GameObject ing in Orders.S.orderIngredients)
+            {
+                Destroy(ing);
+            }
+            Orders.S.orderIngredients.Clear();
         }
     }
 
