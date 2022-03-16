@@ -3,6 +3,16 @@
 ***Plinko Burger is a digital fast food plinko machine that players control using a drive thru headset and a set of condiment squeezy bottles to *attempt* to serve food to their hungry customers***
 
 
+## Plinko Burger - The Final Countdown!
+
+- *anxiety not included*
+
+Some final and important updates are hitting Plinko Burger shelves as we roll into the final week before GDC 2022! One feature we have been hoping to implement for a while has been a way to check off the ingredients from the receipt list as they are collected in the bin by the player. By using individual text elements we finally got that to happen with a demo gif below.
+
+<img src="https://github.com/zSpaceSheikh/PlinkoBurger/blob/main/Media/PB-IngredientChecking.gif" width="60%">
+
+More things will probably get wrapped up this week including updated controllers and caddies as well as some sweet diner hats and buttons so stay tuned!
+
 
 ## Plinko Burger - IT'S HAPPENING
 
