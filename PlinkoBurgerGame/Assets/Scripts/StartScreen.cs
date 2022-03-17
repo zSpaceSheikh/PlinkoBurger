@@ -27,6 +27,7 @@ public class StartScreen : MonoBehaviour
         //actions.Add("Welcome to plinko burger, home of the plinko burger, can I take your order?", GameStart);
         actions.Add("Can I take your order?", GameStart);
         actions.Add("game start", GameStart);
+        actions.Add("start game", GameStart);
         
         // start the music
         AudioManager.S.StartScreenMusic();

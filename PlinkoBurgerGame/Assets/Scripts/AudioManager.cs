@@ -18,6 +18,7 @@ public class AudioManager : MonoBehaviour
     public AudioSource partyHorn;
     public AudioSource pop;
     public AudioSource whoosh;
+    public AudioSource trash;
 
     public AudioSource[] orderVoices;
     
@@ -103,5 +104,10 @@ public class AudioManager : MonoBehaviour
     public void ShakeWhoosh()
     {
         whoosh.Play();
+    }
+    
+    public void TrashCompact()
+    {
+        trash.Play();
     }
 }

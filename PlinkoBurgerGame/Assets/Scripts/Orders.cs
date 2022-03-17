@@ -49,6 +49,12 @@ public class Orders : MonoBehaviour
     private float timeLeft;
     private float prevTime;
 
+    private bool firstOrderComplete;
+
+    public GameObject trashDoors;
+    private Animator compact;
+    public GameObject trashDespawner;
+    
 
     public static Orders S;
     
@@ -75,6 +81,12 @@ public class Orders : MonoBehaviour
         //timerBar = GetComponent<Image>();
         timeLeft = firstOrderTime;
         orderTime = firstOrderTime;
+        
+        firstOrderComplete = false;
+
+        compact = trashDoors.GetComponent<Animator>();
+        trashDespawner.SetActive(false);
+        
     }
 
     IEnumerator GetTextFromFile()
@@ -103,6 +115,10 @@ public class Orders : MonoBehaviour
         // if the player needs the next order, spawn a new order
         if (newOrder)
         {
+            // set the game timer to start (after the first order has been completed)
+            Timer.S.startGameTimer = true;
+            firstOrderComplete = true;
+                
             NewOrder();
             newOrder = false;
             
@@ -115,6 +131,7 @@ public class Orders : MonoBehaviour
             // reset the order up text
             orderBinText.text = "";
         }
+        
         if (BinIngredientManager.S.detectedIngredient)
         {
             BinIngredientManager.S.detectedIngredient = false;
@@ -129,41 +146,51 @@ public class Orders : MonoBehaviour
                 }
             }
         }
-        
-        
-        
-        
-        if (timeLeft > 0)
+
+
+        if (firstOrderComplete)
         {
-            timeLeft -= Time.deltaTime;
-            timerBar.fillAmount = timeLeft / orderTime;
-        }
-        // if the time has run out, get a new order
-        else if (timeLeft <= 0)
-        {
-            // reset the time and bar
-            orderTime = otherOrderTime;
-            timeLeft = orderTime;
-            timerBar.fillAmount = 1;
+            //Debug.Log("firstOrderComplete = true");
             
-            // reset the order up text
-            orderBinText.text = "";
-            
-            // play a buzzer sound for losing the order
-            AudioManager.S.OrderFail();
-            
-            // remove the order ingredient prefabs
-            foreach (GameObject ing in orderIngredients)
+            if (timeLeft > 0)
             {
-                Destroy(ing);
+                timeLeft -= Time.deltaTime;
+                timerBar.fillAmount = timeLeft / orderTime;
             }
-            orderIngredients.Clear();
-            //orderIngredientsParent.SetActive(false);
+            // if the time has run out, get a new order
+            else if (timeLeft <= 0)
+            {
+                // reset the time and bar
+                orderTime = otherOrderTime;
+                timeLeft = orderTime;
+                timerBar.fillAmount = 1;
             
-            // get a new order
-            NewOrder();
-            newOrder = false;
-            StartCoroutine(MoveReceipt());
+                // reset the order up text
+                orderBinText.text = "";
+            
+                // play a buzzer sound for losing the order
+                AudioManager.S.OrderFail();
+            
+                // remove the receipt order ingredient prefabs
+                foreach (GameObject ing in orderIngredients)
+                {
+                    Destroy(ing);
+                }
+                orderIngredients.Clear();
+                //orderIngredientsParent.SetActive(false);
+                
+                //empty the bin contents
+                AudioManager.S.TrashCompact();
+                //play doors animation
+                compact.SetTrigger("CrushTrigger");
+                //despawn the food in the bin
+                StartCoroutine(DespawnBin());
+
+                // get a new order
+                NewOrder();
+                newOrder = false;
+                StartCoroutine(MoveReceipt());
+            }
         }
         
         float time = Mathf.FloorToInt(timeLeft % 60);
@@ -208,7 +235,7 @@ public class Orders : MonoBehaviour
         InstantiateOrderElements();
 
         // play intro audio clip
-        //AudioManager.S.orderVoices[0].Play(0);
+        AudioManager.S.orderVoices[0].Play(0);
 
     }
 
@@ -216,11 +243,15 @@ public class Orders : MonoBehaviour
     {
         // choose a random order
         int r = Random.Range(1, ordersList.Length);
+        
         if (r == prevR)
         {
             prevR = r;
             r = Random.Range(1, ordersList.Length);
         }
+        // stop the previous clip if it is still going
+        AudioManager.S.orderVoices[prevR].Stop();
+        
         prevR = r;
         string[] fullOrder = ordersList[r].Split('=');
         
@@ -235,9 +266,10 @@ public class Orders : MonoBehaviour
         //string order = fullOrder[1].Replace("+", "\n");
         //order_display.text = order;
         InstantiateOrderElements();
-        
+
         // play associated audio clip
-        AudioManager.S.orderVoices[r-1].Play(0);
+        //AudioManager.S.orderVoices[r-1].Play(0);
+        AudioManager.S.orderVoices[prevR].Play(0);
         
         // update the ordertime
         orderTime = otherOrderTime;
@@ -301,6 +333,14 @@ public class Orders : MonoBehaviour
             
             height = height - offset;
         }
+    }
+
+    IEnumerator DespawnBin()
+    {
+        yield return new WaitForSeconds(0.1f);
+        trashDespawner.SetActive(true);
+        yield return new WaitForSeconds(0.1f);
+        trashDespawner.SetActive(false);
     }
     
 }

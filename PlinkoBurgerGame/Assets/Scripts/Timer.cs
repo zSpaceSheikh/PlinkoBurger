@@ -12,6 +12,7 @@ public class Timer : MonoBehaviour
     private float currentTime;
     
     private float secPrev = 15f;
+    public bool startGameTimer;
 
     public float orderAddTime = 5f;
     public Light sceneLight;
@@ -35,22 +36,27 @@ public class Timer : MonoBehaviour
         countdownText.text = "";
         
         currentTime = timeLength;
+        
+        startGameTimer = false;
     }
 
     void Update()
     {
-        if (currentTime > 0)
+        if (startGameTimer)
         {
-            currentTime -= 1 * Time.deltaTime;
-        }
-        else
-        {
-            currentTime = 0;
-            GameEnd();
-        }
-        //countdownText.text = currentTime.ToString("0");
+            if (currentTime > 0)
+            {
+                currentTime -= 1 * Time.deltaTime;
+            }
+            else
+            {
+                currentTime = 0;
+                GameEnd();
+            }
+            //countdownText.text = currentTime.ToString("0");
         
-        DiplayTime(currentTime);
+            DiplayTime(currentTime);
+        }
     }
 
     void DiplayTime(float timeToDisplay)

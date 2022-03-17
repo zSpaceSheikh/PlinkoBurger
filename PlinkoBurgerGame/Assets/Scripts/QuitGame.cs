@@ -4,6 +4,7 @@ using UnityEngine;
 using System;
 using UnityEngine.Windows.Speech;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class QuitGame : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class QuitGame : MonoBehaviour
     void Start()
     {
         actions.Add("Exit the game please", ExitGame);
+        actions.Add("I want to quit Plinko Burger", QuittingPlinkoBurger);
         
         // voice recognition stuff
         keywordRecognizer = new KeywordRecognizer(actions.Keys.ToArray(), ConfidenceLevel.Low);
@@ -31,5 +33,13 @@ public class QuitGame : MonoBehaviour
     public void ExitGame()
     {
         Application.Quit();
+    }
+    
+    public void QuittingPlinkoBurger()
+    {
+        // play a buzzer sound for quitting the game
+        AudioManager.S.OrderFail();
+        
+        SceneManager.LoadScene("StartScene");
     }
 }
