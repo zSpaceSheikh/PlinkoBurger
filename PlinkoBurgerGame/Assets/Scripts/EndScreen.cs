@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using TMPro;
 using UnityEngine.Windows.Speech;
 using System.Linq;
 using UnityEngine.SceneManagement;
@@ -12,8 +13,8 @@ using UnityEngine.UI;
 public class EndScreen : MonoBehaviour
 {
     
-    public Text pointsText;
-    public Text ordersText;
+    public TextMeshPro pointsText;
+    public TextMeshPro ordersText;
     
     private KeywordRecognizer keywordRecognizer;
     private Dictionary<string, Action> actions = new Dictionary<string, Action>();

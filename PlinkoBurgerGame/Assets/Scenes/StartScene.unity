@@ -422,7 +422,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 0.25
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -2754,6 +2754,7 @@ MonoBehaviour:
   partyHorn: {fileID: 0}
   pop: {fileID: 0}
   whoosh: {fileID: 0}
+  trash: {fileID: 0}
   orderVoices: []
 --- !u!1 &1902245484
 GameObject:

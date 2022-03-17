@@ -122,6 +122,7 @@ public class Orders : MonoBehaviour
             // set the game timer to start (after the first order has been completed)
             Timer.S.startGameTimer = true;
             firstOrderComplete = true;
+            numIngredientsCorrect = 0;
                 
             NewOrder();
             newOrder = false;
@@ -209,7 +210,7 @@ public class Orders : MonoBehaviour
 
         
         //if we have checked off all the ingredients required, light up the bin
-        if (numIngredientsCorrect == ingredientsChecklist.Length)
+        if (numIngredientsCorrect == ingredientsChecklist.Length-1)
         {
             // turn on the order up text
             orderBinText.text = "'ORDER UP'";
