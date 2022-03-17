@@ -49,6 +49,8 @@ public class Orders : MonoBehaviour
     private float timeLeft;
     private float prevTime;
 
+    private int numIngredientsCorrect;
+
     private bool firstOrderComplete;
 
     public GameObject trashDoors;
@@ -81,6 +83,8 @@ public class Orders : MonoBehaviour
         //timerBar = GetComponent<Image>();
         timeLeft = firstOrderTime;
         orderTime = firstOrderTime;
+
+        numIngredientsCorrect = 0;
         
         firstOrderComplete = false;
 
@@ -142,6 +146,9 @@ public class Orders : MonoBehaviour
                 {
                     orderIngredients[l].GetComponent<TextMeshPro>().fontStyle = FontStyles.Strikethrough | FontStyles.Bold;
                     orderIngredients[l].GetComponent<TextMeshPro>().color = Color.red;
+
+                    numIngredientsCorrect++;
+                    
                     break;
                 }
             }
@@ -154,8 +161,12 @@ public class Orders : MonoBehaviour
             
             if (timeLeft > 0)
             {
-                timeLeft -= Time.deltaTime;
-                timerBar.fillAmount = timeLeft / orderTime;
+                //when we haven't said order up, decrease the individual order timer
+                if (OrderUp.S.serve)
+                {
+                    timeLeft -= Time.deltaTime;
+                    timerBar.fillAmount = timeLeft / orderTime;
+                }
             }
             // if the time has run out, get a new order
             else if (timeLeft <= 0)
@@ -167,6 +178,7 @@ public class Orders : MonoBehaviour
             
                 // reset the order up text
                 orderBinText.text = "";
+                numIngredientsCorrect = 0;
             
                 // play a buzzer sound for losing the order
                 AudioManager.S.OrderFail();
@@ -195,12 +207,17 @@ public class Orders : MonoBehaviour
         
         float time = Mathf.FloorToInt(timeLeft % 60);
 
-        //Debug.Log(time);
-        if (time < 16)
+        
+        //if we have checked off all the ingredients required, light up the bin
+        if (numIngredientsCorrect == ingredientsChecklist.Length)
         {
             // turn on the order up text
-            orderBinText.text = "'ORDER UP'"; 
-            
+            orderBinText.text = "'ORDER UP'";
+        }
+        
+        // add clock ticks when we have 10 seconds left on an order
+        if (time < 11)
+        {
             if (prevTime - time == 1)
             {
                 AudioManager.S.ClockTicks();

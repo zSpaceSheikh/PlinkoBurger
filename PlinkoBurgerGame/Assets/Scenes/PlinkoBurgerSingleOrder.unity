@@ -18758,6 +18758,7 @@ MonoBehaviour:
   order1Floor: {fileID: 472239783}
   order1Ceiling: {fileID: 1944077260}
   floorDelay: 1.5
+  serve: 1
 --- !u!114 &470122557
 MonoBehaviour:
   m_ObjectHideFlags: 0

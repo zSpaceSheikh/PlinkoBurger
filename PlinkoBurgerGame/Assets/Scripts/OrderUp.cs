@@ -12,10 +12,20 @@ public class OrderUp : MonoBehaviour
     public GameObject order1Ceiling;
     public float floorDelay;
     
-    private bool serve = true;
+    public bool serve = true;
     
     private KeywordRecognizer keywordRecognizer;
     private Dictionary<string, Action> actions = new Dictionary<string, Action>();
+    
+    public static OrderUp S;
+
+    private void Awake()
+    {
+        if (S == null)
+        {
+            S = this;
+        }
+    }
 
     private void Start()
     {
