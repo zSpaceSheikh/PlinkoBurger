@@ -11,13 +11,15 @@ Remember all those game updates we had been promising were coming soon? Well the
 
 First off, we noticed an annoying side effect when a player didn't submit an order in time, they would have a bin full of stuff left at the bottom which either got dumped into the next order and would eventually get sent with new stuff on top, or sent off too late to the next order which basically just ended up losing them 2 orders over all. So now, when an individual order runs out, the bin gets cleared with a thunderous slamming noise and the food gets dumped out. 
 
-<img src="https://github.com/zSpaceSheikh/PlinkoBurger/blob/main/Media/PB-TrashCompactor.gif" width="40%">
+<img src="https://github.com/zSpaceSheikh/PlinkoBurger/blob/main/Media/PB-TrashCompactor.gif" width="50%">
 
 Another annoying issue was that a player might send an order off with time left in the timer, but it takes just a little bit of time to register the food, so it would actually lose the order, load a new one, and then count for that next one. We now have the order timer pause when it hears the "order up" from the player submitting an order. 
 
-<!-- <img src="https://github.com/zSpaceSheikh/PlinkoBurger/blob/main/Media/PB-TrashCompactor.gif" width="40%"> -->
+<img src="https://github.com/zSpaceSheikh/PlinkoBurger/blob/main/Media/PB-OrderTimer.gif" width="50%">
 
 Something we have been wanting to implement for a long time now was some sort of introduction to the game, with a little bit of info, and without dumping you right into the timed portion of the game. What we came up with was a sort of tutorial space driven by some customer service jargon-y info audio talking about how to play, in a non-timed area where the player can move about and call out ingredients to get their bearings first. Once that test order is sent off, the time starts and the actual game begins.
+
+<img src="https://github.com/zSpaceSheikh/PlinkoBurger/blob/main/Media/PB-TutorialSpace.gif" width="40%">
 
 Other small updates include adding a way to quit the level and go back to the start screen (literally by saying "I want to quit") and some small updates to the orders, order text, and having an "order up" prompt pop up when all the correct ingredients are in the bin and checked off of the list. 
 
