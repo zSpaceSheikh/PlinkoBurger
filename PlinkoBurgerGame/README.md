@@ -3,6 +3,27 @@
 ***Plinko Burger is a digital fast food plinko machine that players control using a drive thru headset and a set of condiment squeezy bottles to *attempt* to serve food to their hungry customers***
 
 
+## Plinko Burger - Rise and Grind
+
+- *Oh yeah, I remember that bug*
+
+Remember all those game updates we had been promising were coming soon? Well they're finally here! A ton of small tweaks have been in the works for a while, and most of them are finally being implemented in the actual game. (Wowee!) So let's take a quick look at what's new with Plinko Burger.
+
+First off, we noticed an annoying side effect when a player didn't submit an order in time, they would have a bin full of stuff left at the bottom which either got dumped into the next order and would eventually get sent with new stuff on top, or sent off too late to the next order which basically just ended up losing them 2 orders over all. So now, when an individual order runs out, the bin gets cleared with a thunderous slamming noise and the food gets dumped out. 
+
+<img src="https://github.com/zSpaceSheikh/PlinkoBurger/blob/main/Media/PB-TrashCompactor.gif" width="40%">
+
+Another annoying issue was that a player might send an order off with time left in the timer, but it takes just a little bit of time to register the food, so it would actually lose the order, load a new one, and then count for that next one. We now have the order timer pause when it hears the "order up" from the player submitting an order. 
+
+<!-- <img src="https://github.com/zSpaceSheikh/PlinkoBurger/blob/main/Media/PB-TrashCompactor.gif" width="40%"> -->
+
+Something we have been wanting to implement for a long time now was some sort of introduction to the game, with a little bit of info, and without dumping you right into the timed portion of the game. What we came up with was a sort of tutorial space driven by some customer service jargon-y info audio talking about how to play, in a non-timed area where the player can move about and call out ingredients to get their bearings first. Once that test order is sent off, the time starts and the actual game begins.
+
+Other small updates include adding a way to quit the level and go back to the start screen (literally by saying "I want to quit") and some small updates to the orders, order text, and having an "order up" prompt pop up when all the correct ingredients are in the bin and checked off of the list. 
+
+We think these updates make the Plinko Burger experience MUCH more enjoyable and cohesive and we hope you all will have a blast!
+
+
 ## Plinko Burger - The Final Countdown!
 
 - *anxiety not included*
@@ -12,6 +33,7 @@ Some final and important updates are hitting Plinko Burger shelves as we roll in
 <img src="https://github.com/zSpaceSheikh/PlinkoBurger/blob/main/Media/PB-IngredientChecking.gif" width="60%">
 
 More things will probably get wrapped up this week including updated controllers and caddies as well as some sweet diner hats and buttons so stay tuned!
+
 
 
 ## Plinko Burger - IT'S HAPPENING
