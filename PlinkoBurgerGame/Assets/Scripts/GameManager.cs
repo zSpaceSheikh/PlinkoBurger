@@ -165,6 +165,7 @@ public class GameManager : MonoBehaviour
         actions.Add("ice cream", IceCream);
         actions.Add("cookie", Cookie);
         actions.Add("brownie", Brownie);
+        actions.Add("shavaca do", Shavacado);
         
         // add more things to spawn here ------------------------
 
@@ -647,6 +648,17 @@ public class GameManager : MonoBehaviour
     private void IceCream()
     {
         spawnIngredient(iceCream, hopMystery);
+        mysteryMR.material.EnableKeyword("_EMISSION");
+        Invoke("MysteryLightUp", lightUpTime);
+        // activate the spawn sound
+        AudioManager.S.SpawnDing();
+    }
+
+    private void Shavacado()
+    {
+        for (int i = 0; i < 10; i++) {
+            spawnIngredient(avocado, hopMystery);
+        }
         mysteryMR.material.EnableKeyword("_EMISSION");
         Invoke("MysteryLightUp", lightUpTime);
         // activate the spawn sound
