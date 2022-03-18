@@ -206,7 +206,7 @@ public class GameManager : MonoBehaviour
         // add a clone of the item to the scene at the correct position
         GameObject c = Instantiate(ingredient) as GameObject;
         Vector3 hopperLoc = hopper.transform.position;
-        c.transform.position = new Vector3(hopperLoc.x, hopperLoc.y, -1.25f);
+        c.transform.position = new Vector3(hopperLoc.x, hopperLoc.y, -1f);
         c.transform.Rotate(0, 0, aI);
         
         // activate the spawn sound
