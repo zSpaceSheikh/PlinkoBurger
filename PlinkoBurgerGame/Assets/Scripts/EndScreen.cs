@@ -27,7 +27,10 @@ public class EndScreen : MonoBehaviour
         ordersText.text = Score.S.numOrders.ToString();
         
         
-        actions.Add("next shift", GameStartScreen);
+        actions.Add("Thanks come again", GameStartScreen);
+        actions.Add("Come again", GameStartScreen);
+        actions.Add("Next Shift", GameStartScreen);
+        actions.Add("Have a nice day", GameStartScreen);
 
         // voice recognition stuff
         keywordRecognizer = new KeywordRecognizer(actions.Keys.ToArray(), ConfidenceLevel.Low);
