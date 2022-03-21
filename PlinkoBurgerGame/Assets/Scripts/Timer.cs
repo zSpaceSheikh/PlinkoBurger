@@ -19,6 +19,7 @@ public class Timer : MonoBehaviour
 
     //public TextMeshProUGUI countdownText;
     public Text countdownText;
+    public int count;
     
     public static Timer S;
     
@@ -34,6 +35,7 @@ public class Timer : MonoBehaviour
     {
         //countdownText = FindObjectOfType<TextMeshProUGUI>();
         countdownText.text = "";
+        count = 0;
         
         currentTime = timeLength;
         
@@ -75,7 +77,7 @@ public class Timer : MonoBehaviour
         
         
         // sound an alarm for the last 10 seconds
-        if (secs < 11 && mins == 0)
+        if (secs < 12 && mins == 0)
         {
             //Debug.Log("secs: " + secs + "  secPrev: " + secPrev);
             if (secPrev - secs == 1)
@@ -84,8 +86,11 @@ public class Timer : MonoBehaviour
                 else
                 {
                     // make the alarm sound go off
-                    AudioManager.S.TimerAlarm();
-                    
+                    //AudioManager.S.TimerAlarm();
+                    //play the countdown audio
+                    AudioManager.S.countdown[count].Play(0);
+                    count++;
+
                     // flash the lights red on the even numbers
                     if (secs % 2f == 0f)
                     {

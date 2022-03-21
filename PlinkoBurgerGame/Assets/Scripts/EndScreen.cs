@@ -40,6 +40,7 @@ public class EndScreen : MonoBehaviour
     
     private void GameStartScreen()
     {
+        //AudioManager.S.EndSound();
         SceneManager.LoadScene("StartScene");
     }
     

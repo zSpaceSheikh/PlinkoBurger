@@ -20,6 +20,8 @@ public class AudioManager : MonoBehaviour
     public AudioSource whoosh;
     public AudioSource trash;
 
+    public AudioSource[] countdown;
+
     public AudioSource[] orderVoices;
     
     public static AudioManager S;
