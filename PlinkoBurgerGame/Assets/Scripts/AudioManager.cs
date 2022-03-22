@@ -6,6 +6,7 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public AudioSource startScreenMusic;
+    public AudioSource endScreenMusic;
     public AudioSource backgroundNoise;
     public AudioSource spawnDing;
     public AudioSource receiptPrint;
@@ -47,7 +48,12 @@ public class AudioManager : MonoBehaviour
     {
         startScreenMusic.Play();
     }
-    
+
+    public void EndScreenMusic()
+    {
+        endScreenMusic.Play();
+    }
+
     public void BackgroundNoise()
     {
         backgroundNoise.Play();

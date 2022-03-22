@@ -25,8 +25,10 @@ public class EndScreen : MonoBehaviour
         // set the points and number of orders values on the screen
         pointsText.text = Score.S.playerScore.ToString();
         ordersText.text = Score.S.numOrders.ToString();
-        
-        
+
+        // start the music
+        AudioManager.S.EndScreenMusic();
+
         actions.Add("Thanks come again", GameStartScreen);
         actions.Add("Come again", GameStartScreen);
         actions.Add("Next Shift", GameStartScreen);
@@ -40,7 +42,8 @@ public class EndScreen : MonoBehaviour
     
     private void GameStartScreen()
     {
-        //AudioManager.S.EndSound();
+        AudioManager.S.EndSound();
+        AudioManager.S.endScreenMusic.Stop();
         SceneManager.LoadScene("StartScene");
     }
     
