@@ -2,6 +2,22 @@
 
 ***Plinko Burger is a digital fast food plinko machine that players control using a drive thru headset and a set of condiment squeezy bottles to *attempt* to serve food to their hungry customers***
 
+## Plinko Burger - SHOWCASE AT GDC alt.ctrl 2022!!
+
+- *this is a really exhausting dream*
+
+OMG IT HAPPENED! Yes Plinko Burger went to GDC 2022 to showcase at this year's alt.ctrl expo! We laughed, we cried, we spent 12+ hours on our feet multiple days in a row, and it was awesome.
+
+<img src="https://github.com/zSpaceSheikh/PlinkoBurger/blob/main/Media/GDC-sign.JPG" width="40%">
+
+Hundreds of people played Plinko Burger and became honorary members of the plinko work force. We had suprisingly few technical difficulties, and were able to show through all 3 days that expo was open! It was amazing to see not only all the other amazing games (shoutout to Pastry Panic! with cat) but also the incredible GDC patrons who willingly participated in all the bizarre experiences.
+
+<img src="https://github.com/zSpaceSheikh/PlinkoBurger/blob/main/Media/GDC-table.JPG" width="40%"> <img src="https://github.com/zSpaceSheikh/PlinkoBurger/blob/main/Media/GDC-player.png" width="50%">
+
+Thank you GDC 2022 for an amazing week, and maybe we'll see ya'll again soon!
+
+<img src="https://github.com/zSpaceSheikh/PlinkoBurger/blob/main/Media/GDC-PlinkoDance.gif" width="60%">
+
 
 ## Plinko Burger - Rise and Grind
 
