@@ -3,7 +3,7 @@
 
 ***Plinko Burger is a digital fast food plinko machine that players control using a drive thru headset and a set of condement squeezy bottles to *attempt* to serve food to their hungry customers***
 
-<img src="https://github.com/zSpaceSheikh/PlinkoBurger/blob/main/Media/PB-Caddy.JPG" width="50%">
+<img src="https://github.com/zSpaceSheikh/PlinkoBurger/blob/main/Media/GDC-caddy.JPG" width="50%">
 
 [itch.io Game Page](https://z-sheikh.itch.io/plinko-burger)
 
