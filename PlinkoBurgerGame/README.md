@@ -16,7 +16,7 @@ Hundreds of people played Plinko Burger and became honorary members of the plink
 
 Thank you GDC 2022 for an amazing week, and maybe we'll see ya'll again soon!
 
-<img src="https://github.com/zSpaceSheikh/PlinkoBurger/blob/main/Media/GDC-PlinkoDance.gif" width="60%">
+<img src="https://github.com/zSpaceSheikh/PlinkoBurger/blob/main/Media/GDC-Dancin.gif" width="60%">
 
 
 ## Plinko Burger - Rise and Grind
